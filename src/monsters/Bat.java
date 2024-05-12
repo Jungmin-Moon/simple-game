@@ -2,19 +2,18 @@ package monsters;
 
 public class Bat implements Monster{
     protected String name = "Bat";
-    protected int minLevel = 1;
-    protected int maxLevel = 5;
-    protected int mp = 0;
-    protected int hp = 10;
-    protected int str = 6;
-    protected int mag = 7;
-    protected int def = 5;
-    protected int magDef = 5;
+    protected final int minLevel = 1;
+    protected final  int maxLevel = 5;
+    protected final  int mp = 0;
+    protected final  int hp = 10;
+    protected final  int str = 6;
+    protected final  int mag = 7;
+    protected final  int def = 5;
+    protected final  int magDef = 5;
 
     //001 pictures for bat
-    Bat() {
 
-    }
+
 
     @Override
     public int basicAtk() {

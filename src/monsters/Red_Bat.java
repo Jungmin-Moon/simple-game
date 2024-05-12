@@ -3,14 +3,14 @@ package monsters;
 public class Red_Bat implements Monster{
 
     protected String name = "Red Bat";
-    protected int minLevel = 4;
-    protected int maxLevel = 12;
-    protected int mp = 10;
-    protected int hp = 20;
-    protected int str = 8;
-    protected int mag = 6;
-    protected int def = 7;
-    protected int magDef = 6;
+    protected final  int minLevel = 4;
+    protected final  int maxLevel = 12;
+    protected final  int mp = 10;
+    protected final  int hp = 20;
+    protected final  int str = 8;
+    protected final  int mag = 6;
+    protected final  int def = 7;
+    protected final  int magDef = 6;
     @Override
     public int basicAtk() {
         System.out.println("The " + name + " claws at you.");
