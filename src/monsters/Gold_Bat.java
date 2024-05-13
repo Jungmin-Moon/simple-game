@@ -11,7 +11,37 @@ public class Gold_Bat implements Monster{
     protected final  int def = 11;
     protected final  int magDef = 8;
 
+    public int getMinLevel() {
+        return minLevel;
+    }
 
+    public int getMaxLevel() {
+        return maxLevel;
+    }
+
+    public int getOriginalMP() {
+        return mp;
+    }
+
+    public int getOriginalHP() {
+        return hp;
+    }
+
+    public int getOriginalStr() {
+        return str;
+    }
+
+    public int getOriginalMag() {
+        return mag;
+    }
+
+    public int getOriginalDef() {
+        return def;
+    }
+
+    public int getOriginalMagDef() {
+        return magDef;
+    }
 
     @Override
     public int basicAtk() {

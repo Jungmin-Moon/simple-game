@@ -11,6 +11,39 @@ public class Red_Bat implements Monster{
     protected final  int mag = 6;
     protected final  int def = 7;
     protected final  int magDef = 6;
+
+    public int getMinLevel() {
+        return minLevel;
+    }
+
+    public int getMaxLevel() {
+        return maxLevel;
+    }
+
+    public int getOriginalMP() {
+        return mp;
+    }
+
+    public int getOriginalHP() {
+        return hp;
+    }
+
+    public int getOriginalStr() {
+        return str;
+    }
+
+    public int getOriginalMag() {
+        return mag;
+    }
+
+    public int getOriginalDef() {
+        return def;
+    }
+
+    public int getOriginalMagDef() {
+        return magDef;
+    }
+
     @Override
     public int basicAtk() {
         System.out.println("The " + name + " claws at you.");

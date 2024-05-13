@@ -13,7 +13,37 @@ public class Bat implements Monster{
 
     //001 pictures for bat
 
+    public int getMinLevel() {
+        return minLevel;
+    }
 
+    public int getMaxLevel() {
+        return maxLevel;
+    }
+
+    public int getOriginalMP() {
+        return mp;
+    }
+
+    public int getOriginalHP() {
+        return hp;
+    }
+
+    public int getOriginalStr() {
+        return str;
+    }
+
+    public int getOriginalMag() {
+        return mag;
+    }
+
+    public int getOriginalDef() {
+        return def;
+    }
+
+    public int getOriginalMagDef() {
+        return magDef;
+    }
 
     @Override
     public int basicAtk() {

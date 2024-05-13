@@ -3,7 +3,6 @@ public class Player {
 
 /*
 From Weakest to Strongest
-bat - normal, red, gold 001
 beetle - blue, green, gold 004
 mushroom - green, gold, purple 008
 plant - gold, light blue, white 007
