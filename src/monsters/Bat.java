@@ -1,5 +1,6 @@
 package monsters;
 
+import java.util.Random;
 public class Bat implements Monster{
     protected String name = "Bat";
     protected final int minLevel = 1;
@@ -62,4 +63,30 @@ public class Bat implements Monster{
         System.out.println("The " + name + " headbutts you.");
         return 6;
     }
+
+    //each tier of enemy will favor certain levels of attacks
+    //first tier will favor basic over any other
+    //second tier will favor intermediate and their spell more
+    //final tier will favor advanced and spells
+    @Override
+    public void chooseAttack() {
+        int choice = generateRandomInt();
+
+        switch (choice) {
+            case 1,2,3,4,5,6,7,8:
+                basicAtk();
+            case 9:
+                intermediateAtk();
+            case 10:
+                advancedAtk();
+        };
+    }
+
+    public int generateRandomInt() {
+        Random rand = new Random();
+        int answer = rand.nextInt(10 - 1 + 1) + 1;
+
+        return answer;
+    }
+
 }

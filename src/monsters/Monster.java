@@ -8,5 +8,6 @@ public interface Monster {
 
     public int advancedAtk();
 
+    public void chooseAttack();
 
 }

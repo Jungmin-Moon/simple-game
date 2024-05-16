@@ -1,5 +1,6 @@
 package monsters;
 
+import java.util.Random;
 public class Gold_Bat implements Monster{
     protected String name = "Gold Bat";
     protected final  int minLevel = 5;
@@ -70,4 +71,48 @@ public class Gold_Bat implements Monster{
         System.out.println("The " + name + " casts aero on you.");
         return 9;
     }
+
+    @Override
+    public void chooseAttack() {
+        int choice = generateRandomInt();
+
+        switch(choice) {
+            case 1, 2:
+                basicAtk();
+            case 3,4:
+                intermediateAtk();
+            case 5,6,7,8,9,10:
+                advancedAttackChoice();
+        }
+
+    }
+
+    public void advancedAttackChoice() {
+        int option = generateOneToThree();
+
+        switch(option) {
+            case 1:
+                advancedAtk();
+            case 2:
+                castFire();
+            case 3:
+                castWind();
+        }
+    }
+
+    public int generateOneToThree() {
+        Random rand = new Random();
+        int ans = rand.nextInt(3 - 1 + 1) + 1;
+
+        return ans;
+    }
+
+    public int generateRandomInt() {
+        Random rand = new Random();
+        int answer = rand.nextInt(10 - 1 + 1) + 1;
+
+        return answer;
+    }
+
+
 }
