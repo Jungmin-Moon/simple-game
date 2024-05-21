@@ -12,6 +12,10 @@ public class Gold_Bat implements Monster{
     protected final  int def = 11;
     protected final  int magDef = 8;
 
+    public String getName() {
+        return name;
+    }
+
     public int getMinLevel() {
         return minLevel;
     }
