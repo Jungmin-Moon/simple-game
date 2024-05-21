@@ -73,7 +73,7 @@ public class Bat implements Monster{
         int choice = generateRandomInt();
 
         switch (choice) {
-            case 1,2,3,4,5,6,7,8:
+            case 1, 2, 3, 4, 5, 6, 7, 8:
                 basicAtk();
             case 9:
                 intermediateAtk();

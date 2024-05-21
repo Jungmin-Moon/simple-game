@@ -51,24 +51,24 @@ public class Gold_Bat implements Monster{
     @Override
     public int basicAtk() {
         System.out.println("The " + name + " claws at you.");
-        return 7;
+        return 2;
     }
 
     @Override
     public int intermediateAtk() {
         System.out.println("The " + name + " slaps you with its wings.");
-        return 11;
+        return 4;
     }
 
     @Override
     public int advancedAtk() {
         System.out.println("The " + name + " headbutts you.");
-        return 13;
+        return 6;
     }
 
     public int castFire() {
         System.out.println("The " + name + " casts fire on you.");
-        return 9;
+        return 6;
     }
 
     public int castWind() {
@@ -83,9 +83,9 @@ public class Gold_Bat implements Monster{
         switch(choice) {
             case 1, 2:
                 basicAtk();
-            case 3,4:
+            case 3, 4:
                 intermediateAtk();
-            case 5,6,7,8,9,10:
+            case 5, 6, 7, 8, 9, 10:
                 advancedAttackChoice();
         }
 

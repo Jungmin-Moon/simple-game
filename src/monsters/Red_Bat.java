@@ -48,19 +48,19 @@ public class Red_Bat implements Monster{
     @Override
     public int basicAtk() {
         System.out.println("The " + name + " claws at you.");
-        return 5;
+        return 2;
     }
 
     @Override
     public int intermediateAtk() {
         System.out.println("The " + name + " slaps you with its wings.");
-        return 8;
+        return 4;
     }
 
     @Override
     public int advancedAtk() {
         System.out.println("The " + name + " headbutts you.");
-        return 11;
+        return 6;
     }
 
     public int castFire() {
@@ -73,11 +73,11 @@ public class Red_Bat implements Monster{
         int choice = generateRandomInt();
 
         switch(choice) {
-            case 1,2:
+            case 1, 2:
                 basicAtk();
-            case 3,4,5,6,7, 8:
+            case 3, 4, 5, 6, 7, 8:
                 intermediateAttackChoice();
-            case 9,10:
+            case 9, 10:
                 advancedAtk();
         }
 
