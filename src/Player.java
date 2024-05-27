@@ -3,12 +3,16 @@ public class Player {
 
 /*
 From Weakest to Strongest
-mushroom - green, gold, purple 008
+same tier as beetle, mushroom, bat
+worm - green, brown, purple 005
+
+new tier of enemy
 plant - gold, light blue, white 007
 snake - green, brown, purple 003
-treant - green, pink, black 006
 wolf - brown, silver, red 002
-worm - green, brown, purple 005
+
+
+treant - green, pink, black 006
 slime - blue, pink, grey 009
 ghost - white, blue, black 010
 oni - red, blue, black 019
