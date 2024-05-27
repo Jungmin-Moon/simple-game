@@ -1,5 +1,7 @@
 package monsters;
 
+import java.util.Random;
+
 //008
 public class Green_Mushroom implements Monster{
 
@@ -41,21 +43,40 @@ public class Green_Mushroom implements Monster{
 
     @Override
     public int basicAtk() {
-        return 0;
+        System.out.println("The " + name + " slaps you, somehow.");
+        return 6;
     }
 
     @Override
     public int intermediateAtk() {
-        return 0;
+        System.out.println("The " + name + " slams into you.");
+        return 8;
     }
 
     @Override
     public int advancedAtk() {
-        return 0;
+        System.out.println("The " + name + " spews out a gas attack.");
+        return 12;
     }
 
     @Override
     public void chooseAttack() {
+        int choice = generateRandomInt();
 
+        switch(choice) {
+            case 1, 2, 3, 4, 5, 6, 7, 8:
+                basicAtk();
+            case 9:
+                intermediateAtk();
+            case 10:
+                advancedAtk();
+        }
+    }
+
+    public int generateRandomInt() {
+        Random rand = new Random();
+        int answer = rand.nextInt(10 - 1 + 1) + 1;
+
+        return answer;
     }
 }
