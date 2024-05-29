@@ -2,7 +2,7 @@ package monsters;
 import java.util.Random;
 
 //005
-public class Green_Worm {
+public class Green_Worm implements Monster{
 
     protected String name = "Green Worm";
 
@@ -40,4 +40,44 @@ public class Green_Worm {
     public int getDef() { return def; }
 
     public int getMagDef() { return magDef; }
+
+
+    @Override
+    public int basicAtk() {
+        System.out.println("The " + name + " hits you with their body.");
+        return 7;
+    }
+
+    @Override
+    public int intermediateAtk() {
+        System.out.println("The " + name + " casts stone.");
+        return 9;
+    }
+
+    @Override
+    public int advancedAtk() {
+        System.out.println("The " + name + " spurs a gust of sand around you.");
+        return 11;
+    }
+
+    @Override
+    public void chooseAttack() {
+        int choice = generateRandomInt();
+
+        switch (choice) {
+            case 1, 2, 3, 4, 5, 6, 7, 8:
+                basicAtk();
+            case 9:
+                intermediateAtk();
+            case 10:
+                advancedAtk();
+        }
+    }
+
+    public int generateRandomInt() {
+        Random rand = new Random();
+        int answer = rand.nextInt(10 - 1 + 1) + 1;
+
+        return answer;
+    }
 }

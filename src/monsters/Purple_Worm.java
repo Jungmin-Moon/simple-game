@@ -2,7 +2,7 @@ package monsters;
 import java.util.Random;
 
 //005
-public class Purple_Worm {
+public class Purple_Worm implements Monster{
 
     protected String name = "Purple Worm";
 
@@ -40,4 +40,41 @@ public class Purple_Worm {
     public int getDef() { return def; }
 
     public int getMagDef() { return magDef; }
+
+
+    @Override
+    public int basicAtk() {
+        return 7;
+    }
+
+    @Override
+    public int intermediateAtk() {
+        return 9;
+    }
+
+    @Override
+    public int advancedAtk() {
+        return 11;
+    }
+
+    @Override
+    public void chooseAttack() {
+        int choice = generateRandomInt();
+
+        switch (choice) {
+            case 1:
+                basicAtk();
+            case 2:
+                intermediateAtk();
+            case 3, 4, 5, 6, 7, 8, 9, 10:
+                advancedAtk();
+        }
+    }
+
+    public int generateRandomInt() {
+        Random rand = new Random();
+        int answer = rand.nextInt(10 - 1 + 1) + 1;
+
+        return answer;
+    }
 }

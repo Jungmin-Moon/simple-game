@@ -42,19 +42,19 @@ public class Gold_Beetle implements Monster{
     @Override
     public int basicAtk() {
         System.out.println("The " + name + " headbutts you.");
-        return 8;
+        return 6;
     }
 
     @Override
     public int intermediateAtk() {
         System.out.println(name + " uses its wings to blow a gust of wind at you.");
-        return 10;
+        return 8;
     }
 
     @Override
     public int advancedAtk() {
         System.out.println(name + " jumps up and slams into you.");
-        return 14;
+        return 12;
     }
 
     @Override
