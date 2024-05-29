@@ -6,8 +6,8 @@ import java.util.Random;
 public class Purple_Mushroom implements Monster {
 
     protected String name = "Purple Mushroom";
-    protected final int minLevel = 8;
-    protected final int maxLevel = 16;
+    protected final int minLevel = 14;
+    protected final int maxLevel = 20;
     protected final int mp = 20;
     protected final int hp = 30;
     protected final int str = 12;

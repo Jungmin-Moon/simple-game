@@ -3,8 +3,8 @@ package monsters;
 import java.util.Random;
 public class Gold_Bat implements Monster{
     protected String name = "Gold Bat";
-    protected final  int minLevel = 5;
-    protected final  int maxLevel = 15;
+    protected final  int minLevel = 14;
+    protected final  int maxLevel = 20;
     protected final  int mp = 20;
     protected final  int hp = 30;
     protected final  int str = 12;

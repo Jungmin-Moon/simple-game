@@ -6,7 +6,7 @@ import java.util.Random;
 public class Green_Mushroom implements Monster{
 
     protected String name = "Green Mushroom";
-    protected final int minLevel = 3;
+    protected final int minLevel = 1;
     protected final int maxLevel = 6;
     protected final int mp = 20;
     protected final int hp = 10;

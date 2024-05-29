@@ -4,8 +4,8 @@ import java.util.Random;
 public class Red_Bat implements Monster{
 
     protected String name = "Red Bat";
-    protected final  int minLevel = 4;
-    protected final  int maxLevel = 12;
+    protected final  int minLevel = 7;
+    protected final  int maxLevel = 13;
     protected final  int mp = 10;
     protected final  int hp = 20;
     protected final  int str = 8;

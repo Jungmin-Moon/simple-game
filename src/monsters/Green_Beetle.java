@@ -5,8 +5,8 @@ import java.util.Random;
 public class Green_Beetle implements Monster{
 
     protected String name = "Green Beetle";
-    protected final int minLevel = 5;
-    protected final int maxLevel = 8;
+    protected final int minLevel = 7;
+    protected final int maxLevel = 13;
     protected final int mp = 0;
     protected final int hp = 20;
     protected final int str = 12;
