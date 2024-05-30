@@ -11,6 +11,7 @@ public class Bat implements Monster{
     protected final  int mag = 7;
     protected final  int def = 5;
     protected final  int magDef = 5;
+    protected final int speed = 4;
 
     //001 pictures for bat
 
@@ -45,6 +46,8 @@ public class Bat implements Monster{
     public int getOriginalMagDef() {
         return magDef;
     }
+
+    public int getSpeed() { return speed; }
 
     @Override
     public int basicAtk() {

@@ -14,6 +14,7 @@ public class Purple_Mushroom implements Monster {
     protected final int mag = 8;
     protected final int def = 12;
     protected final int magDef = 3;
+    protected final int speed = 18;
 
     public String getName() {
         return name;
@@ -40,6 +41,8 @@ public class Purple_Mushroom implements Monster {
     public int getDef() { return def; }
 
     public int getMagDef() { return magDef; }
+
+    public int getSpeed() { return speed; }
 
 
     @Override

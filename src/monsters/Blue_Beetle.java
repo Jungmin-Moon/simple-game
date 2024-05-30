@@ -13,6 +13,7 @@ public class Blue_Beetle implements Monster{
     protected final int mag = 0;
     protected final int def = 8;
     protected final int magDef = 0;
+    protected final int speed = 4;
 
     public String getName() {
         return name;
@@ -39,6 +40,8 @@ public class Blue_Beetle implements Monster{
     public int getDef() { return def; }
 
     public int getMagDef() { return magDef; }
+
+    public int getSpeed() { return speed; }
 
     @Override
     public int basicAtk() {

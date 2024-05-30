@@ -11,6 +11,7 @@ public class Gold_Bat implements Monster{
     protected final  int mag = 10;
     protected final  int def = 11;
     protected final  int magDef = 8;
+    protected final int speed = 14;
 
     public String getName() {
         return name;
@@ -47,6 +48,8 @@ public class Gold_Bat implements Monster{
     public int getOriginalMagDef() {
         return magDef;
     }
+
+    public int getSpeed() { return speed; }
 
     @Override
     public int basicAtk() {

@@ -14,6 +14,7 @@ public class Purple_Worm implements Monster{
     protected final int mag = 14;
     protected final int def = 14;
     protected final int magDef = 14;
+    protected final int speed = 16;
 
     public String getName() {
         return name;
@@ -41,19 +42,24 @@ public class Purple_Worm implements Monster{
 
     public int getMagDef() { return magDef; }
 
+    public int getSpeed() { return speed; }
+
 
     @Override
     public int basicAtk() {
+        System.out.println("The " + name + " hits you with their body.");
         return 7;
     }
 
     @Override
     public int intermediateAtk() {
+        System.out.println("The " + name + " casts stone.");
         return 9;
     }
 
     @Override
     public int advancedAtk() {
+        System.out.println("The " + name + " spurs a gust of sand around you.");
         return 11;
     }
 

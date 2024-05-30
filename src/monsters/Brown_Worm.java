@@ -14,6 +14,7 @@ public class Brown_Worm implements Monster{
     protected final int mag = 9;
     protected final int def = 9;
     protected final int magDef = 9;
+    protected final int speed = 9;
 
     public String getName() {
         return name;
@@ -41,21 +42,27 @@ public class Brown_Worm implements Monster{
 
     public int getMagDef() { return magDef; }
 
+    public int getSpeed() { return speed; }
+
 
     @Override
     public int basicAtk() {
+        System.out.println("The " + name + " hits you with their body.");
         return 7;
     }
 
     @Override
     public int intermediateAtk() {
+        System.out.println("The " + name + " casts stone.");
         return 9;
     }
 
     @Override
     public int advancedAtk() {
+        System.out.println("The " + name + " spurs a gust of sand around you.");
         return 11;
     }
+
 
     @Override
     public void chooseAttack() {

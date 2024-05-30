@@ -14,6 +14,7 @@ public class Green_Worm implements Monster{
     protected final int mag = 5;
     protected final int def = 5;
     protected final int magDef = 5;
+    protected final int speed = 5;
 
     public String getName() {
         return name;
@@ -41,6 +42,7 @@ public class Green_Worm implements Monster{
 
     public int getMagDef() { return magDef; }
 
+    public int getSpeed() { return speed; }
 
     @Override
     public int basicAtk() {

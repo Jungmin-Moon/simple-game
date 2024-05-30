@@ -6,7 +6,6 @@ public interface Monster {
     /*
 From Weakest to Strongest
 tier 2: 20 to 35 level
-plant - gold, light blue, white 007
 snake - green, brown, purple 003
 wolf - brown, silver, red 002
 slime - blue, pink, grey 009

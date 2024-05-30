@@ -12,6 +12,7 @@ public class Red_Bat implements Monster{
     protected final  int mag = 6;
     protected final  int def = 7;
     protected final  int magDef = 6;
+    protected final int speed = 8;
 
     public int getMinLevel() {
         return minLevel;
@@ -44,6 +45,8 @@ public class Red_Bat implements Monster{
     public int getOriginalMagDef() {
         return magDef;
     }
+
+    public int getSpeed() { return speed; }
 
     @Override
     public int basicAtk() {
